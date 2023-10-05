@@ -8,16 +8,16 @@
 
     //ENTRADA
 
-    let numero = Number (prompt(`informe cinco números`));
+    let numeros = [];
 
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        
-    }
-    
     //PROCESSAMENTO
+    for (i = 5; i >= 1; i--) {
+        numero = Number(prompt(`Informe um número:`));
+        numeros.push(numero);
+    }
+    let maiorNumero = Math.max(...numeros);
 
-    
     //SAÍDA
+    alert(`O maior número dentre os que você informou é o ${maiorNumero}`);
 
 </script>
